@@ -1,11 +1,11 @@
 <p style="text-align:center;" align="center">
-  <img align="center" src="./logo.png" alt="PyTubeSearch" width="300px" height="300px"/>
+  <img align="center" src="https://raw.githubusercontent.com/Malith-Rukshan/PyTubeSearch/refs/heads/main/api/static/img/logo.png" alt="PyTubeSearch" width="300px" height="300px"/>
 </p>
 <h1 align="center">🔍 PyTubeSearch</h1>
 <div align='center'>
 
 [![PyPI Package](https://img.shields.io/badge/PyPI-pytubesearch-4B8BBE?logo=pypi&style=flat)](https://pypi.org/project/pytubesearch/)
-[![FastAPI](https://img.shields.io/badge/Test%20Code-Ready-009688?logo=verizon&style=flat)](https://geoip-api.malith.dev/)
+[![TestCode](https://img.shields.io/badge/Test%20Code-Ready-009688?logo=verizon&style=flat)](https://github.com/Malith-Rukshan/PyTubeSearch?tab=readme-ov-file#testing)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 </div>
 
