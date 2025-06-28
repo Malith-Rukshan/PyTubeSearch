@@ -1,0 +1,77 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install black isort
+
+    - name: Format code with black
+      run: |
+        black pytubesearch tests
+
+    - name: Sort imports with isort
+      run: |
+        isort pytubesearch tests
+
+    - name: Check for changes
+      run: |
+        git diff --exit-code || (echo "Code formatting changes detected. Please run 'black pytubesearch tests' and 'isort pytubesearch tests' locally." && exit 1)
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 flake8-docstrings flake8-import-order
+
+    - name: Lint with flake8
+      run: |
+        flake8 pytubesearch --max-line-length=100 --extend-ignore=E203,W503
+
+  type-check:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.11"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -e .
+        pip install -r requirements/dev.txt
+
+    - name: Type check with mypy
+      run: |
+        mypy pytubesearch

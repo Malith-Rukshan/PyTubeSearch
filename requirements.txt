@@ -1,0 +1,2 @@
+# Main requirements file - points to base requirements
+-r requirements/base.txt

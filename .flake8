@@ -1,0 +1,18 @@
+[flake8]
+max-line-length = 100
+max-complexity = 10
+extend-ignore = E203,W503,E501,F401,D400,D401,D105,D106,C901,I100,I101,F541,W293,F841
+exclude =
+    .git,
+    __pycache__,
+    build,
+    dist,
+    *.egg-info,
+    .venv,
+    .tox,
+    .pytest_cache
+per-file-ignores =
+    __init__.py:F401
+    tests/*:F401,F811
+import-order-style = google
+application-import-names = pytubesearch
