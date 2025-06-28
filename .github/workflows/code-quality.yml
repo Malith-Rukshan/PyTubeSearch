@@ -2,9 +2,23 @@ name: Code Quality
 
 on:
   push:
-    branches: [ main, develop ]
+    branches: [ main, dev ]
+    paths:
+      - '**.py'
+      - 'requirements/**'
+      - 'setup.py'
+      - 'setup.cfg'
+      - 'pyproject.toml'
+      - '.github/workflows/code-quality.yml'
   pull_request:
-    branches: [ main, develop ]
+    branches: [ main, dev ]
+    paths:
+      - '**.py'
+      - 'requirements/**'
+      - 'setup.py'
+      - 'setup.cfg'
+      - 'pyproject.toml'
+      - '.github/workflows/code-quality.yml'
 
 jobs:
   format:
