@@ -1,5 +1,5 @@
 <p style="text-align:center;" align="center">
-  <img align="center" src="https://raw.githubusercontent.com/Malith-Rukshan/PyTubeSearch/refs/heads/main/api/static/img/logo.png" alt="PyTubeSearch" width="300px" height="300px"/>
+  <img align="center" src="https://raw.githubusercontent.com/Malith-Rukshan/PyTubeSearch/refs/heads/main/logo.png" alt="PyTubeSearch" width="300px" height="300px"/>
 </p>
 <h1 align="center">🔍 PyTubeSearch</h1>
 <div align='center'>
