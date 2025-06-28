@@ -146,7 +146,7 @@ from pytubesearch import PyTubeSearch
 
 with PyTubeSearch() as client:
     # Get playlist contents
-    playlist = client.get_playlist_data("PLrAXtmRdnEQy9j4XPpPNJkr0bO8E4BcJj")
+    playlist = client.get_playlist_data("PLI523PxNjNxwzlFjRBgDdPjlyA0_ZNtwJ")
     
     print(f"Playlist has {len(playlist.items)} videos")
     
