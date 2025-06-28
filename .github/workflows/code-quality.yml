@@ -53,7 +53,7 @@ jobs:
 
     - name: Lint with flake8
       run: |
-        flake8 pytubesearch --max-line-length=100 --extend-ignore=E203,W503
+        flake8 pytubesearch --max-line-length=100
 
   type-check:
     runs-on: ubuntu-latest
