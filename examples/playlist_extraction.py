@@ -10,7 +10,7 @@ This example demonstrates how to work with YouTube playlists:
 
 Usage:
     python playlist_extraction.py
-    python playlist_extraction.py "PLrAXtmRdnEQy9j4XPpPNJkr0bO8E4BcJj"
+    python playlist_extraction.py "PLI523PxNjNxwzlFjRBgDdPjlyA0_ZNtwJ"
 """
 
 import sys
@@ -279,7 +279,7 @@ def main():
 
     # Default playlist IDs for examples
     default_playlists = [
-        "PLrAXtmRdnEQy9j4XPpPNJkr0bO8E4BcJj",  # Example tech playlist
+        "PLI523PxNjNxwzlFjRBgDdPjlyA0_ZNtwJ",  # Example tech playlist
         "PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi",  # 3Blue1Brown Linear Algebra
     ]
 

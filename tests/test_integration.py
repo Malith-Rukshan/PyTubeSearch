@@ -99,7 +99,7 @@ class TestPlaylistIntegration:
     def test_get_playlist_data_integration(self):
         """Test getting playlist data with real data."""
         # Using a known playlist ID that should be stable
-        playlist_id = "PLrAXtmRdnEQy9j4XPpPNJkr0bO8E4BcJj"  # Example playlist
+        playlist_id = "PLI523PxNjNxwzlFjRBgDdPjlyA0_ZNtwJ"  # Example playlist
 
         with PyTubeSearch(timeout=60.0) as client:
             try:
